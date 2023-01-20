@@ -67,6 +67,16 @@ After registering the trained model to SageMaker Model Registry, you can choose 
 - Sequentially run the code cells from the `image-classification-sagemaker-pipelines.ipynb` Jupyter notebook within SageMaker Studio
     - **Note:** Make sure to appropriately configure the `TODO` portions of the code before you run the code cells
 
+## Clean up
+- Delete the S3 bucket with the image dataset and the default S3 bucket created by the SageMaker session
+    - For more information on this, follow the instructions from [Deleting a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.html) from the Amazon S3 documentation.
+    - **Note:** The default S3 bucket created by the SageMaker session should be in the following format: *"sagemaker-{region}-{aws-account-id}”*
+- Delete model group from SageMaker Model Registry
+     - Follow the instructions from [Delete a Model Group](https://apg-library.amazonaws.com/content-viewer/author/ff1f11b2-ec30-47e5-9e01-835dc10b5a42#:~:text=Follow%20the%20instructions%20from%20Delete%20a%20Model%20Group%20from%20the%20Amazon%20SageMaker%20documentation.) from the Amazon SageMaker documentation.
+     - **Note:** The model group name should be *“MXNet-Image-Classification.”* This was previously defined in the `image-classification-sagemaker-pipelines.ipynb` Jupyter notebook
+- Delete SageMaker Domain
+    - Follow the instructions from [Delete an Amazon SageMaker Domain (console)](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-delete-domain.html#gs-studio-delete-domain-studio) from the Amazon SageMaker documentation
+
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
