@@ -59,13 +59,13 @@ After registering the trained model to SageMaker Model Registry, you can choose 
     - Follow the instructions from [Onboard to Amazon SageMaker Domain Using Quick setup](https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-quick-start.html) from the Amazon SageMaker documentation.
     - **Note:** When setting up the IAM role for the user profile, ensure that you give access to the Amazon S3 bucket you created earlier.
 - Launch SageMaker Studio application
-    - Follow the instructions from [Launch Studio Using the Amazon SageMaker Console](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-launch.html#studio-launch-console)from the Amazon SageMaker documentation
+    - Follow the instructions from [Launch Studio Using the Amazon SageMaker Console](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-launch.html#studio-launch-console) from the Amazon SageMaker documentation
 - Download the `image-classification-sagemaker-pipelines.ipynb` and `scripts` from this GitLab repository
 - Upload the `image-classification-sagemaker-pipelines.ipynb` and `scripts` to the SageMaker Studio application
 
 ### Step 3. Run the Jupyter notebook in Amazon SageMaker Studio
 - Sequentially run the code cells from the `image-classification-sagemaker-pipelines.ipynb` Jupyter notebook within SageMaker Studio
-    - **Note:** Make sure to appropriately configure the `TODO` portions of the code as you run the code cells
+    - **Note:** Make sure to appropriately configure the `TODO` portions of the code before you run the code cells
 
 ## Security
 
