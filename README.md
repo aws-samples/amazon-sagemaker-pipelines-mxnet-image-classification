@@ -9,12 +9,12 @@ This architecture describes how to: (1) preprocess an image (.jpg) dataset into 
 - Access to the following [Pizza or Not Pizza?](https://www.kaggle.com/datasets/carlosrunner/pizza-not-pizza) public dataset
     - **Note:** For this pattern, you will be building a binary image classification model that detects whether an input image contains a pizza food item or not. However, you can modify this pattern to optionally use any image dataset that has two distinct classes (i.e. cat vs. dog)
 - An Amazon Simple Storage Service (Amazon S3) bucket to store the image (.jpeg) dataset
-- Access to create and configure an Amazon SageMaker Domain and User Profile. For more information about this, see Onboard to Amazon SageMaker Domain in the Amazon SageMaker documentation
+- Access to create and configure an Amazon SageMaker Domain and User Profile. For more information about this, see [Onboard to Amazon SageMaker Domain](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-onboard.html)in the Amazon SageMaker documentation
 - Access to Amazon SageMaker Studio
 - An understanding of Amazon SageMaker notebooks and Jupyter notebooks
 - An understanding of how to create an AWS Identity and Access Management (IAM) role with basic SageMaker role permissions and S3 bucket access permissions
 - Familiarity with Python
-- Familiarity with common ML terms and concepts such as “binary classification”, “preprocessing”, “hyperparameters”, etc. For more information about this, see Machine Learning Concepts in the Amazon Machine Learning documentation
+- Familiarity with common ML terms and concepts such as “binary classification”, “preprocessing”, “hyperparameters”, etc. For more information about this, see [Machine Learning Concepts](https://docs.aws.amazon.com/machine-learning/latest/dg/machine-learning-concepts.html) in the Amazon Machine Learning documentation
 
 ### Limitations
 - To save processing time and cut costs, only a subset (1000 images) of the [Pizza or Not Pizza? dataset](https://www.kaggle.com/datasets/carlosrunner/pizza-not-pizza) is used to build the image classification model. You can choose to use more (or less) data or choose another dataset entirely (as mentioned above)
