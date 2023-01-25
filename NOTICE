@@ -1,0 +1,13 @@
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+**********************
+THIRD PARTY COMPONENTS
+**********************
+This software includes and/or depends on third party software subject to the following copyrights:
+
+**********************
+Apache 2.0 License
+**********************
+mxnet
+https://github.com/apache/mxnet/blob/master/tools/im2rec.py
+pathlib
