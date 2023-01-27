@@ -61,7 +61,7 @@ if __name__ == "__main__":
     test_f1 = metric[1][1]
     
     print(f"Test Accuracy: {test_accuracy}")
-    print(f"Test F1: {test_f1}"
+    print(f"Test F1: {test_f1}")
 
     report_dict = {
         "classification_metrics": {
