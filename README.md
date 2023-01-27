@@ -9,7 +9,7 @@ This architecture describes how to: (1) preprocess an image (.jpg) dataset into 
 - Access to the following [Pizza or Not Pizza?](https://www.kaggle.com/datasets/carlosrunner/pizza-not-pizza) public dataset
     - **Note:** For this pattern, you will be building a binary image classification model that detects whether an input image contains a pizza food item or not. However, you can modify this pattern to optionally use any image dataset that has two distinct classes (i.e. cat vs. dog)
 - An Amazon Simple Storage Service (Amazon S3) bucket to store the image (.jpeg) dataset
-- Access to create and configure an Amazon SageMaker Domain and User Profile. For more information about this, see [Onboard to Amazon SageMaker Domain](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-onboard.html)in the Amazon SageMaker documentation
+- Access to create and configure an Amazon SageMaker Domain and User Profile. For more information about this, see [Onboard to Amazon SageMaker Domain](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-onboard.html) in the Amazon SageMaker documentation
 - Access to Amazon SageMaker Studio
 - An understanding of Amazon SageMaker notebooks and Jupyter notebooks
 - An understanding of how to create an AWS Identity and Access Management (IAM) role with basic SageMaker role permissions and S3 bucket access permissions
