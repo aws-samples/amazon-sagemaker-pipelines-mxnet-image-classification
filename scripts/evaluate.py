@@ -59,6 +59,9 @@ if __name__ == "__main__":
     metric = mod.score(eval_data=test, eval_metric=['acc', 'f1'])
     test_accuracy = metric[0][1]
     test_f1 = metric[1][1]
+    
+    print(f"Test Accuracy: {test_accuracy}")
+    print(f"Test F1: {test_f1}"
 
     report_dict = {
         "classification_metrics": {
