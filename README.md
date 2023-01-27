@@ -66,6 +66,10 @@ After registering the trained model to SageMaker Model Registry, you can choose 
 ### Step 3. Run the Jupyter notebook in Amazon SageMaker Studio
 - Sequentially run the code cells from the `image-classification-sagemaker-pipelines.ipynb` Jupyter notebook within SageMaker Studio
     - **Note:** Make sure to appropriately configure the `TODO` portions of the code before you run the code cells
+- You can graphically monitor the pipeline execution in SageMaker Studio.
+    - Follow the instructions from [View a Pipeline](https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-studio-list-pipelines.html) from the Amazon SageMaker documentation.
+- After the pipeline is finished, you can view the registered model and associated metadata within SageMaker Studio.
+    - Follow the instructions from [View the Details of a Model Version (Amazon SageMaker Studio)](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-details.html#model-registry-details-studio) section of Amazon SageMaker documentation.
 
 ## Clean up
 1. Delete the S3 bucket with the image dataset and the default S3 bucket created by the SageMaker session
