@@ -24,8 +24,13 @@ if __name__ == "__main__":
         tar.extractall(path=".")
     
     param_file = glob.glob('./*.params')
-    epoch = int(param_file[0][-8])
+    epoch = int(param_file[0][-11:-7])
     sym, arg_params, aux_params = mx.model.load_checkpoint("image-classification", epoch)
+    
+    model_shapes_json_file = open('./model-shapes.json')
+    model_shapes_dict = json.load(model_shapes_json_file)[0]
+    train_batch_size = model_shapes_dict['shape'][0]
+    train_data_shape = tuple(model_shapes_dict['shape'][1:])
 
     ###### 2. Loading and preparing test .rec file ######
     logger.debug("Reading test data.")
@@ -36,8 +41,8 @@ if __name__ == "__main__":
     test = mx.io.ImageRecordIter(path_imgrec=test_path,
                                  data_name='data',
                                  label_name='softmax_label',
-                                 batch_size=10,
-                                 data_shape=(3, 224, 224),
+                                 batch_size=train_batch_size,
+                                 data_shape=train_data_shape,
                                  rand_crop=False,
                                  rand_mirro=False)
     
