@@ -82,7 +82,6 @@ After registering the trained model to SageMaker Model Registry, you can choose 
      - **Note:** The model group name should be *“MXNet-Image-Classification.”* This was previously defined in the `image-classification-sagemaker-pipelines.ipynb` Jupyter notebook
 4. Delete SageMaker Domain
     - Follow the instructions from [Delete an Amazon SageMaker Domain (console)](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-delete-domain.html#gs-studio-delete-domain-studio) from the Amazon SageMaker documentation
-5. Delete IAM role for SageMaker User
 
 ## Security
 
