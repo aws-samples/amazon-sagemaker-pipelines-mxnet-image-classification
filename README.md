@@ -75,12 +75,14 @@ After registering the trained model to SageMaker Model Registry, you can choose 
 ## Clean up
 1. Delete the S3 bucket with the image dataset and the default S3 bucket created by the SageMaker session
     - For more information on this, follow the instructions from [Deleting a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.html) from the Amazon S3 documentation.
+2. Delete the default S3 bucket created by the SageMaker session
     - **Note:** The default S3 bucket created by the SageMaker session should be in the following format: *"sagemaker-{region}-{aws-account-id}”*
-2. Delete model group from SageMaker Model Registry
+3. Delete model group from SageMaker Model Registry
      - Follow the instructions from [Delete a Model Group](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-delete-model-group.htmleiifcbevrhk) from the Amazon SageMaker documentation.
      - **Note:** The model group name should be *“MXNet-Image-Classification.”* This was previously defined in the `image-classification-sagemaker-pipelines.ipynb` Jupyter notebook
-3. Delete SageMaker Domain
+4. Delete SageMaker Domain
     - Follow the instructions from [Delete an Amazon SageMaker Domain (console)](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-delete-domain.html#gs-studio-delete-domain-studio) from the Amazon SageMaker documentation
+5. Delete IAM role for SageMaker User
 
 ## Security
 
