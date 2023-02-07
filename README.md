@@ -81,7 +81,7 @@ After registering the trained model to SageMaker Model Registry, you can choose 
      - Follow the instructions from [Delete a Model Group](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-delete-model-group.htmleiifcbevrhk) from the Amazon SageMaker documentation.
      - **Note:** The model group name should be *“MXNet-Image-Classification.”* This was previously defined in the `image-classification-sagemaker-pipelines.ipynb` Jupyter notebook  
 4. Delete SageMaker IAM execution role
-    - First, navigate to your SageMaker Domain via the Amazon SageMaker console. Next, click on the "Domain Settings" tab. Now, under "General settings," you should find the "Execution role" for your SageMaker Domain. Copy the name of that "Execution role" (i.e. "AmazonSageMaker-ExecutionRole-XXXXXXXXXXXXXXX".
+    - First, navigate to your SageMaker Domain via the Amazon SageMaker console. Next, click on the "Domain Settings" tab. Now, under "General settings," you should find the "Execution role" for your SageMaker Domain. Copy the name of that "Execution role" (i.e. "AmazonSageMaker-ExecutionRole-XXXXX".
     - Next, navigate to the AWS IAM console and delete the SageMaker Execution (IAM) role you just copied. For more information about this, refer to [Deleting an IAM role (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_delete.html#roles-managingrole-deleting-console) from the AWS IAM documentation.
 4. Delete SageMaker Domain
     - Follow the instructions from [Delete an Amazon SageMaker Domain (console)](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-delete-domain.html#gs-studio-delete-domain-studio) from the Amazon SageMaker documentation
