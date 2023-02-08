@@ -86,8 +86,6 @@ After registering the trained model to SageMaker Model Registry, you can choose 
 4. Delete SageMaker Domain
     - Follow the instructions from [Delete an Amazon SageMaker Domain (console)](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-delete-domain.html#gs-studio-delete-domain-studio) from the Amazon SageMaker documentation
 
-
-
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
@@ -95,4 +93,7 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
+
+## Authors
+- [Siddharth Kumaran](https://github.com/siddgood), Assoc. Machine Learning Engineer @ AWS Professional Services
 
